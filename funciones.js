@@ -18,8 +18,8 @@ function SquareRootFuncion(StartNumber){
             ProductDivision = (ProductDivision+(StartNumber/ProductDivision))/2;
         };
         ProductDivision = ProductDivision.toFixed(3)
-        numberA=parseFloat(ProductDivision);
-        ChangeTheText()};
+        numberB=parseFloat(ProductDivision);
+        screen.textContent = numberB};
 };
 document.getElementById('SquareRoot').addEventListener('click', () => {
     SquareRootFuncion(Number(numberA))
@@ -31,8 +31,6 @@ async function equal(){
         numberA = Number(numberA)
         numberB = Number(numberB)
         switch (process){
-            case "SquareRoot":
-                respond = SquareRootFuncion(numberA)
             case "Percentege":
                 respond = (numberB*numberA)/100
                 break;
@@ -59,7 +57,6 @@ function handleKeyDown(event) {
         ModalLoadTap();
     }
 }
-
 document.addEventListener('keydown', handleKeyDown);
 
 function Add(number) {
