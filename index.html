@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="headpage">
+        <p>🤣Basic edition</p>
+        <h1>CALCUL-IA</h1>
+        <p>The new sunshine</p>
+    </div>
+    <div class="background">
+    <div class="Calculator">
+        <p class="EXTREME">Calculator</p>
+        <div class="result" id="screen"></div>
+        <div class="BUTTONS">
+            <button class="Grays" id="clear" onclick="ClearAll()">Cl</button>
+            <button class="Grays" id="SquareRoot">^</button>
+            <button class="Grays" onclick="Process('Percentege')">%</button>
+            <button class="Grays" onclick="Process('Division')">/</button>
+
+            <button onclick="Add('7')">7</button>
+            <button onclick="Add('8')">8</button>
+            <button onclick="Add('9')">9</button>
+            <button class="Grays" onclick="Process('Multiplied')">*</button>
+
+            <button onclick="Add('4')">4</button>
+            <button onclick="Add('5')">5</button>
+            <button onclick="Add('6')">6</button>
+            <button class="Grays" onclick="Process('Less')">-</button>
+
+            <button onclick="Add('1')">1</button>
+            <button onclick="Add('2')">2</button>
+            <button onclick="Add('3')">3</button>
+            <button class="Grays" id="plus" onclick="Process('Plus')">+</button>
+            
+            <button id="ButtonZero" onclick="Add('0')">0</button>
+            <button id="point">.</button>
+            <button class="Red" id="equal" onclick="equal()">=</button>  
+        </div>
+        <div id="information"><p>V-1.00</p><p>🟢Cloud Sync Activate</p></div>
+    </div>
+    </div>
+    <dialog id="PayMenuTab">
+        <div class="Memberships">
+            <div style="background: linear-gradient(90deg, #959704, #490a7c)" ><p>Super Premiun</p><p class="Prize">$35 USD PER MONTH</p></div>
+            <div style="background: linear-gradient(90deg, #020c3b, #3b0f5f)"><p>Premiun</p><p class="Prize">$20 USD PER MONTH</p></div>
+            <div style="background: linear-gradient(90deg, #070707, #3b0f5f)"><p>For poors</p><p class="Prize">$1 USD PER MONTH</p></div>
+        </div>
+        <div class="Login">
+            <p>Login with us</p>
+            <div class="InputText">
+                <input type="text" placeholder="UserName">
+                <input type="text" placeholder="Password">
+                <input type="text" placeholder="Gmail">
+                <button>ALREADY LOGIN!!</button>
+            </div>
+            <div class="BankCarts">
+                <button><img src="img/BVA.jpg"></button>
+                <button><img src="img/SAN.jpg"></button>
+                <button><img src="img/BanCoppel_logo.png"></button>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="LoadTab">
+        <img src="img/Load2.gif" alt="animation" class="GifLoadTab">
+        <p>Conection to the Cloud</p>
+    </dialog>
+    <script src="funciones.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>

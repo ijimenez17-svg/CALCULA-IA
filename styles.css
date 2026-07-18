@@ -1,0 +1,238 @@
+body{
+    background: linear-gradient(180deg, #8a2be2 0%, #007bff 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-image: 
+        /*círculos blancos diminutos difuminados que parecen puntitos/estrellas */
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px),
+        linear-gradient(180deg, #8a2be2 0%, #007bff 100%);
+    background-size: 40px 40px, 60px 60px, 100% 100%;
+    background-repeat: repeat, repeat, no-repeat;
+
+    min-height: 100vh;
+    margin: 0;
+    display: flex;     
+    align-items: center;
+    justify-content: center;   
+
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.headpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.headpage h1 {
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.result {  
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 40px;
+    background-color: rgba(165, 1, 116, 0.123);
+    margin: 10px;
+    border: 2px solid rgba(241, 3, 241, 0.062);
+    border-radius: 10px;
+    /*texto*/
+    color: white;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.BUTTONS {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.BUTTONS button{
+    width:100px;
+    height: 80px;
+    margin: 5px;
+    background-color: rgb(58, 57, 57);
+    color: rgb(246, 244, 244);
+    cursor:pointer;
+    border-radius: 10px;
+    border: 0.5px solid rgb(83, 83, 83);
+}
+.Calculator {
+    max-width: 470px;
+    background-color: rgba(68, 7, 90, 0.692);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 0px;
+    padding: 10px;
+}
+.EXTREME {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    /*texto*/
+    color: white;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.background{
+    width: auto;
+    backdrop-filter: blur(1px);
+    background: radial-gradient(circle, rgba(219, 62, 219, 0.2) 80%, transparent 100%);
+    padding: 30px;
+}
+.BUTTONS button.Grays {
+    background-color: rgb(97, 96, 96);
+}
+.BUTTONS button.Red {
+    background-color: rgb(223, 3, 3);
+}
+#ButtonZero{
+    width: 220px;
+}
+#information {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Ventanas emergentes aquiiii*/
+dialog {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    z-index: 1000;
+    border: none;
+    padding: 0;
+    background: transparent;
+    display: none;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+dialog[open] {
+    display: flex;
+}
+
+#LoadTab{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1f1f1f, #3b0f5f);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.GifLoadTab {
+    width: 200px;
+    height: 150px;
+}
+
+#PayMenuTab {
+    overflow: hidden;
+    width: 1400px;
+    height: 700px;
+    background: linear-gradient(90deg, #1f1f1f, #3b0f5f);
+}
+#PayMenuTab .Memberships {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    gap: 20px;
+}
+#PayMenuTab .Memberships div{
+    width: 90%;
+    height: 27%;
+    background-color: #3b0f5f;
+    padding: 10px;
+
+    font-weight: 400;
+    font-size: 30px;
+    color: antiquewhite;
+}
+.Prize{
+    font-size: 50px;
+}
+
+#PayMenuTab .Login {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    padding-top: 30px;
+    
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0px;
+    color: antiquewhite;
+}
+#PayMenuTab .Login .InputText{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+#PayMenuTab .Login .InputText input{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-color: #007bff;
+    background-color: #f7f7f7;
+}
+#PayMenuTab .Login .InputText button{
+    width: 50%;
+    height: 90px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: large;
+    border-color: transparent;
+    background-color: #6f02a1;
+}
+
+#PayMenuTab .Login .BankCarts button{
+    background-color: transparent;
+    border-color: transparent;
+}
+#PayMenuTab .Login .BankCarts button img{
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+}
